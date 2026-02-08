@@ -1,21 +1,21 @@
-# MiniShell - a minimal UNIX shell imitating Bash
+# Small shell - a minimal UNIX shell imitating Bash
 This project was carried out as a team of two with <a href="https://github.com/kaloliini">@kaloliina</a>.\
 The goal of this project was to build a Bash-inspired minimal UNIX shell written in C.
 <br><br>
 ### Quick Start 🚀
 1. Clone the repository and compile:
 ```bash
-git clone https://github.com/sonjasonjao/minishell.git
-cd minishell
+git clone https://github.com/sonjasonjao/small_shell.git
+cd small_shell
 make
 ```
 2. Run:
 ```bash
-./minishell
+./small_shell
 ```
 3. When program runs and opens standard input, give any command, such as
 ```bash
-minishell > echo Hello world
+small shell > echo Hello world
 Hello world
 ```
 ### My areas of responsibility
