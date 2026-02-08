@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	split_setstring(char const *s, int *i, int *len, int *quote)
 {

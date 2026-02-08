@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 char	*add_quotes_export_helper(char **envp, int i, int j, char *temp2)
 {

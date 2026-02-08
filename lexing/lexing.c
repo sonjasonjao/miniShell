@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 int	count_args(t_data *parser, int i, int j)
 {

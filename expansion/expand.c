@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static char	*handle_quotes_helper(char *new, char *s, int i, int j)
 {

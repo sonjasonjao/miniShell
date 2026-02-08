@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static int	prep_for_execution(t_pipes *my_pipes)
 {

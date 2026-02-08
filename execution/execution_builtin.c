@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static void	run_builtin_command(t_node *node, t_pipes *my_pipes)
 {

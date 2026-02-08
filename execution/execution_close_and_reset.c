@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	close_all_fds(t_pipes *my_pipes)
 {

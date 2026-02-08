@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static int	heredoc_sigint(t_pipes *my_pipes, char *line)
 {
@@ -89,7 +89,7 @@ static int	heredoc_read(t_node *heredoc_node,
 		line = NULL;
 	}
 	heredoc_free_close(line, my_pipes);
-	open_infile("minishell_tmpfile", my_pipes);
+	open_infile("small_shell_tmpfile", my_pipes);
 	return (0);
 }
 
@@ -99,20 +99,20 @@ int	heredoc(t_node *heredoc_node, t_pipes *my_pipes, int status)
 
 	check_tmp_dir(my_pipes);
 	heredoc_node->hd_fd
-		= open("minishell_tmpfile", O_CREAT | O_TRUNC | O_WRONLY, 0777);
+		= open("small_shell_tmpfile", O_CREAT | O_TRUNC | O_WRONLY, 0777);
 	if (heredoc_node->hd_fd < 0)
 	{
-		perror("minishell: minishell_tmpfile (here-document)");
+		perror("small_shell: small_shell_tmpfile (here-document)");
 		return (-1);
 	}
 	flag = heredoc_read(heredoc_node, my_pipes, status);
-	if (unlink("minishell_tmpfile") < 0)
+	if (unlink("small_shell_tmpfile") < 0)
 	{
 		my_pipes->hd_dir = 0;
 		fatal_exec_error(ERR_UNLINK, my_pipes, NULL, NULL);
 	}
 	if (chdir("..") < 0)
-		perror("minishell: chdir");
+		perror("small_shell: chdir");
 	if (my_pipes->hd_dir == 2)
 		heredoc_rmdir(*my_pipes->my_envp, my_pipes);
 	return (flag);

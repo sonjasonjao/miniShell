@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static int	expand_cmd_helper(char *arg, t_exp *expand, int new_arg, int i)
 {

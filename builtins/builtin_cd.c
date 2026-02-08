@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static int	update_oldpwd(char ***envp, char *old_pwd, int i)
 {
@@ -88,7 +88,7 @@ static void	cd_no_args(t_exp *expand, t_pipes *my_pipes)
 	}
 	else if (chdir(expand->expansion) < 0)
 	{
-		perror("minishell: cd");
+		perror("small_shell: cd");
 		my_pipes->exit_status = 1;
 	}
 	else

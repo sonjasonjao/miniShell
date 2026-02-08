@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static int	set_cmd_no_args(t_data *parser, t_index *index, t_node *new_node)
 {

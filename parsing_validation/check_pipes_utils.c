@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	end_pipe_ctrld(char *temp, t_data *parser, char *line, int backup_fd)
 {

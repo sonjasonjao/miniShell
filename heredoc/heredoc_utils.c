@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static int	hd_invalid_exp_line(char *line, char *replacer)
 {

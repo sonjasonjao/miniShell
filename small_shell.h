@@ -1,5 +1,5 @@
-#ifndef MINISHELL_H
-# define MINISHELL_H
+#ifndef SMALL_SHELL_H
+# define SMALL_SHELL_H
 # include "libft/libft.h"
 # include <stdlib.h>
 # include <unistd.h>
@@ -31,7 +31,7 @@
 # define ERR_EXECVE "%s: Unknown failure\n"
 # define ERR_EOF "syntax error: unexpected end of file\n"
 # define ERR_FORMAT "%s: cannot execute binary file: Exec format error\n"
-# define ERR_UNLINK "unlink: failed to remove file (minishell_tmpfile)\n"
+# define ERR_UNLINK "unlink: failed to remove file (small_shell_tmpfile)\n"
 
 extern volatile sig_atomic_t	g_signum;
 

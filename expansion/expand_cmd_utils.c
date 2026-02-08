@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	init_new_cmd(char **cmd, t_data *parser, t_exp *expand)
 {

@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 char	**split_freearray(char **array, int j, int *error)
 {

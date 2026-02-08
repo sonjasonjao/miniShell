@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static void	initialize_struct(t_pipes *my_pipes, t_node *list, char ***envp)
 {

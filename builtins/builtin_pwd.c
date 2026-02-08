@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	execute_pwd(t_pipes *my_pipes, char ***envp, int i, t_exp *expand)
 {
@@ -8,7 +8,7 @@ void	execute_pwd(t_pipes *my_pipes, char ***envp, int i, t_exp *expand)
 	if (!buf)
 		fatal_exec_error(ERR_MALLOC, my_pipes, NULL, NULL);
 	if (!getcwd(buf, 4096))
-		perror("minishell: getcwd");
+		perror("small_shell: getcwd");
 	else if (!envp && !i)
 		ft_printf(1, "%s\n", buf);
 	else

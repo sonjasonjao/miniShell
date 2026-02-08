@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	handle_redirections(t_pipes *my_pipes)
 {

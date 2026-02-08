@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	fatal_export_unset_error(char **new_envp, t_pipes *my_pipes)
 {

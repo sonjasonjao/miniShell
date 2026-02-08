@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static int	check_closing_quote(char *s, int i, int quote)
 {

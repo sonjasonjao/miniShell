@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static void	free_envp_array(char **envp, int i)
 {

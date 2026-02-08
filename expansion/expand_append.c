@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	append_char_heredoc(char **new_string, char c,
 	t_pipes *my_pipes, t_node *heredoc_node)

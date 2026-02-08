@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	execve_fail_hd(t_pipes *my_pipes, char *msg)
 {
@@ -64,7 +64,7 @@ void	heredoc_mkdir(char **envp, t_pipes *my_pipes, int status)
 		fatal_exec_error(NULL, my_pipes, NULL, NULL);
 	}
 	if (chdir("./tmp") < 0)
-		perror("minishell: chdir");
+		perror("small_shell: chdir");
 }
 
 void	heredoc_rmdir(char **envp, t_pipes *my_pipes)
@@ -103,13 +103,13 @@ void	handle_tmpfile(t_pipes *my_pipes)
 		else
 			my_pipes->heredoc_node->hd_fd = -1;
 	}
-	if (unlink("minishell_tmpfile") < 0)
+	if (unlink("small_shell_tmpfile") < 0)
 	{
 		my_pipes->hd_dir = 0;
 		fatal_exec_error(ERR_UNLINK, my_pipes, NULL, NULL);
 	}
 	if (chdir("..") < 0)
-		perror("minishell: chdir");
+		perror("small_shell: chdir");
 	if (my_pipes->hd_dir == 2)
 		heredoc_rmdir(*my_pipes->my_envp, my_pipes);
 	my_pipes->hd_dir = 0;

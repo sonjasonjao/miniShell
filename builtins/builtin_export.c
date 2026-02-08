@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 int	export_fill_envp(char ***new_envp, char **cmd, char **envp,
 	t_pipes *my_pipes)

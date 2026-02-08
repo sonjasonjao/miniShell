@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static int	exit_is_nonnumeric_arg(char *arg, t_pipes *my_pipes)
 {

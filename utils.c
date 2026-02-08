@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "small_shell.h"
 
 int	count_elements(char **sections)
 {

@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 int	tokensplit_strings(char const *s, int i)
 {

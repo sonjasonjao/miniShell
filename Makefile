@@ -1,10 +1,10 @@
-NAME = minishell
+NAME = small_shell
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 LIBFTDIR = ./libft
 LIBFT = $(LIBFTDIR)/libft.a
 
-HEADERS = minishell.h $(LIBFTDIR)/libft.h
+HEADERS = small_shell.h $(LIBFTDIR)/libft.h
 BUILTIN_DIR = builtins/
 CLEAN_DIR = cleanup/
 EXEC_DIR = execution/

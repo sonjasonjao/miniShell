@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "small_shell.h"
 
 static void	handle_exp_and_quotes(t_data *parser, int status)
 {
@@ -28,7 +28,7 @@ static void	handle_exp_and_quotes(t_data *parser, int status)
 	}
 }
 
-static int	minishell(char *input, char ***envp, int status)
+static int	small_shell(char *input, char ***envp, int status)
 {
 	t_data	parser;
 	char	*line;
@@ -67,7 +67,7 @@ static int	is_only_space(char *input)
 	return (0);
 }
 
-static void	start_minishell(char ***my_envp)
+static void	start_small_shell(char ***my_envp)
 {
 	int		status;
 	char	*input;
@@ -77,7 +77,7 @@ static void	start_minishell(char ***my_envp)
 	{
 		signal(SIGINT, init_signal_handler);
 		signal(SIGQUIT, SIG_IGN);
-		input = readline("minishell > ");
+		input = readline("small shell > ");
 		if (g_signum == SIGINT)
 		{
 			status = 128 + g_signum;
@@ -89,7 +89,7 @@ static void	start_minishell(char ***my_envp)
 			return ;
 		}
 		else if (input[0] != '\0' && !is_only_space(input))
-			status = minishell(input, my_envp, status);
+			status = small_shell(input, my_envp, status);
 		if (input)
 			add_history(input);
 		free (input);
@@ -103,11 +103,11 @@ int	main(int ac, char **av, char **envp)
 	(void)av;
 	if (ac != 1)
 	{
-		print_error("expected format: <./minishell>\n", NULL, NULL);
+		print_error("expected format: <./small_shell>\n", NULL, NULL);
 		return (0);
 	}
 	my_envp = copy_envp(envp);
-	start_minishell(&my_envp);
+	start_small_shell(&my_envp);
 	free_array(my_envp);
 	return (0);
 }

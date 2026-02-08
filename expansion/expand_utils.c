@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 char	*find_exp(char *arg, int *i, int *k, t_exp *expand)
 {

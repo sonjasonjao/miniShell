@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static char	**tokensplit_makearray_helper(char **array, char const *s,
 	int *error)

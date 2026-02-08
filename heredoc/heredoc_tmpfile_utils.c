@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	check_rmdir_success(t_pipes *my_pipes, pid_t pid)
 {
@@ -38,7 +38,7 @@ void	check_tmp_dir(t_pipes *my_pipes)
 			my_pipes->hd_dir = 2;
 		}
 		else
-			perror("minishell: chdir");
+			perror("small_shell: chdir");
 	}
 	else
 		my_pipes->hd_dir = 1;

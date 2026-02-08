@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "small_shell.h"
 
 t_node	*init_new_node(t_data *parser, t_node *new_node)
 {

@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "small_shell.h"
 
 int	is_whitespace(char c)
 {
@@ -9,7 +9,7 @@ int	is_whitespace(char c)
 
 void	print_error(char *msg, char *conversion_1, char *conversion_2)
 {
-	ft_printf(2, "minishell: ");
+	ft_printf(2, "small_shell: ");
 	if (conversion_1 && !conversion_2)
 		ft_printf(2, msg, conversion_1);
 	else if (conversion_1 && conversion_2)

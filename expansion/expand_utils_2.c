@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 void	count_expandable(char *arg, int *i, int *j)
 {

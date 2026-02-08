@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static int	is_invalid_pipes(char *line, int i, int quote)
 {

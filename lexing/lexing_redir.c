@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 static void	set_redir_type(t_node *new_node, t_data *parser, int i, int j)
 {

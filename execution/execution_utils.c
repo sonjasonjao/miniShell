@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 int	get_pipe_amount(t_node *list)
 {

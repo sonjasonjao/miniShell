@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 int	find_first_unset_element(char **cmd, char **envp, int j)
 {

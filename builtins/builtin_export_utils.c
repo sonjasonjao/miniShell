@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../small_shell.h"
 
 int	find_existing_envp(char ***new_envp, char **cmd, char **envp, int i)
 {

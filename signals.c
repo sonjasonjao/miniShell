@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "small_shell.h"
 
 volatile sig_atomic_t	g_signum = 0;
 
