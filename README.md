@@ -1,7 +1,7 @@
-# Small shell - a minimal UNIX shell imitating Bash
+# Small shell - a minimal Unix shell imitating Bash
 This project was carried out as a team of two with <a href="https://github.com/kaloliini">@kaloliina</a>.\
 We build the program for a 42 curriculum project called minishell at Hive Helsinki. 
-The goal of this project was to build a Bash-inspired minimal UNIX shell written in C.
+The goal of this project was to build a Bash-inspired minimal Unix shell written in C.
 <br><br>
 ## Quick Start 🚀
 ### 1. Clone the repository:
@@ -52,8 +52,9 @@ Hello world
 - Signal handling: SIGINT, SIGQUIT (and ctrl+D)
 <br><br>
 ## Personal learnings
-- UNIX shell commands and how they work under the hood (builtins)
+- Unix shell commands and how they work under the hood (builtins)
 - Input parsing to cover all possible edge cases
 - How to implement heredoc functionality
+- Readline functions: readline, rl_on_new_line, rl_redisplay, rl_replace_line, add_history
 - Basics of signals and handling them
 - Collaborating in a project, merging branches, solving merge conflicts, making codebase consistent with two contributors
