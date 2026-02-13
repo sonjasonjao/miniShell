@@ -1,5 +1,5 @@
 # Small shell - a minimal Unix shell imitating Bash
-This project was carried out as a team of two with <a href="https://github.com/kaloliini">@kaloliina</a>.\
+This project was carried out as a team of two with <a href="https://github.com/kaloliina">@kaloliina</a>.\
 We build the program for a 42 curriculum project called minishell at Hive Helsinki. 
 The goal of this project was to build a Bash-inspired minimal Unix shell written in C.
 <br><br>
